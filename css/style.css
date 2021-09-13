@@ -1,0 +1,132 @@
+body {
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+  background-color: lightgray;
+}
+
+/* Heading Part  */
+
+.title{
+  margin: 0 auto;
+}
+.heading-title{
+  font-weight: 200;
+  text-align: center;
+  font-size: 5em;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+/* Search Part  */
+
+.search-field {
+  border: none;
+  border-radius: 10px;
+  outline: none;
+}
+.search-field:hover {
+  outline: none;
+  border: none;
+}
+.search-box {
+  width: 400px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.search-input {
+  width: 300px;
+  height: 40px;
+}
+.search-button {
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+/* Product Part  */
+
+#all-products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* border: 1px solid black; */
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+.product {
+  background-color: white;
+  border-radius: 10px;
+  margin: 0 5px 30px 15px;
+  box-shadow: 2px 2px grey;
+}
+.product:hover {
+  transform: translateY(10px) scale(1.05);
+  transition: 0.3s ease-in ;
+}
+.single-product {
+  height: 450px;
+  padding: 35px 10px 10px 10px;
+  transition: 0.6s;
+}
+.single-product:hover {
+  box-shadow: 4px 4px 7px gray;
+  border-radius: 10px;
+}
+.product-image {
+  width: 180px;
+  height: 180px;
+}
+.product-title{
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+}
+.product-price{
+  font-size: 25px;
+  font-weight: 500;
+}
+
+/* Billing Part  */
+
+.cart {
+  background-color: whitesmoke;
+  width: 300px;
+  /* border: 1px solid green; */
+  padding: 10px;
+  box-shadow: 10px 10px 20px gray;
+  border-radius: 5px;
+  margin-right: 30px;
+  position: fixed;
+}
+.cart-main {
+  padding-right: 30px;
+}
+
+/* Responsive Part  */
+
+@media only screen and (max-width: 768px) {
+  #all-products {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .cart {
+    width: 300px;
+    /* border: 1px solid green; */
+    padding: 10px;
+    box-shadow: 10px 10px 20px gray;
+    border-radius: 5px;
+    margin-right: 30px;
+    position: fixed;
+  }
+  .cart-main {
+    padding-right: 10px;
+  }
+}
+@media only screen and (max-width: 468px) {
+  #all-products {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
