@@ -10,11 +10,11 @@ body {
   margin: 0 auto;
 }
 .heading-title{
-  font-weight: 200;
+  font-weight: 700;
   text-align: center;
-  font-size: 5em;
-  font-style: italic;
+  font-size: 3em;
   text-transform: uppercase;
+  color: darkblue;
 }
 
 /* Search Part  */
@@ -31,8 +31,8 @@ body {
 .search-box {
   width: 400px;
   margin: auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 .search-input {
   width: 300px;
